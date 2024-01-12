@@ -25,6 +25,8 @@ const pintarCard = (data) => {
   const templateCard = document.getElementById("template-card").content
   const fragment = document.createDocumentFragment()
 
+  cards.textContent = "";
+
   data.results.forEach( item => {
 
     const clone = templateCard.cloneNode(true)
